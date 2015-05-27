@@ -12,4 +12,70 @@ class mezczyzna
 {
 	int x;
 	int y;
+	char sym;
+
+}
+
+int main(){
+
+
+float calcTab[100];
+    float max;
+   
+
+  
+
+    cout << "Podaj liczbe mandatow\n";
+    cin >> mandatesCount;
+
+    for (i=0; i<groupCount; i++)
+    {
+        cout << "Podaj liczbe glosow na partie "<<  i+1 << endl;
+        cin >> glosy[i];
+    }
+
+
+    for (i=0; i<groupCount; i++)
+    {
+        mandaty[i] = 0;
+    }
+
+    for (i=0; i<groupCount; i++)
+    {
+        calcTab[i] = glosy[i];
+    }
+    for (i=0; i<mandatesCount; i++)
+    {
+        max = -1;
+        for (j=0; j<groupCount; j++)
+        {
+            if (max<calcTab[j])
+            {
+                max = calcTab[j];
+                maxInd = j;
+            }
+        }
+        mandaty[maxInd]++;
+        calcTab[maxInd] = calcNewValue(glosy[maxInd], mandaty[maxInd]);
+    }
+
+    for (i=0; i<groupCount; i++)
+    {
+        cout << "Partia " << i+1 << " ma " << mandaty[i] << " mandatow" << endl;
+    }
+
+    return 0;
+}
+
+ float calcNewValue(int glosy, int mandaty)
+   
+	{
+    return (glosy*1.0) / (mandaty+1.0);
+	}
+
+
+
+
+
+
 }
