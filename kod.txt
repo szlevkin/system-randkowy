@@ -19,8 +19,22 @@ class mezczyzna
 int main(){
 
 
-float calcTab[100];
-    float max;
+char plansza[100][100];
+kobiety[8][2];
+mezczyzni[8][2];
+
+for(i=0; i<8; i++)
+{
+	for(j=0; j<2; j++)
+	{
+		srand(time(NULL));
+		x = rand() % 100;
+		kobiety[i][j] = x;
+		srand(time(NULL));
+		x = rand() % 100;
+		mezczyzni[i][j] = x;
+	}
+}
    
 
   
