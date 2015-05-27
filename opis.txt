@@ -1,1 +1,1 @@
-Stworzylismy program symulujacy spacery kobiety i mezczyzny po kwadratowej planszy. gdy kobieta i mezczyzna spotkaja sie na jednym polu to tworza zwiazek i zaczynaja razem poruszac sie po planszy do konca trwania symulacji.
+Stworzylismy program symulujacy spacery kobiety i mezczyzny po kwadratowej planszy. Gdy kobieta i mezczyzna spotkaja sie na jednym polu to tworza zwiazek i zaczynaja razem poruszac sie po planszy do konca trwania symulacji. Gdy spotka ich samotna osoba to mijaja ja- nie tworza sie grupy trzyosobowe. 
