@@ -5,5 +5,11 @@ using namespace std;
 
 class kobieta
 {
-
+	int x;
+	int y;
+}
+class mezczyzna
+{
+	int x;
+	int y;
 }
